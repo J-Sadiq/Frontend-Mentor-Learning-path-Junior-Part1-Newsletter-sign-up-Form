@@ -7,5 +7,69 @@
     <script defer src="script.js"></script>
     <title>Newsletter sign-up Form</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <article class="card newsletter-card">
+        <header>
+          <h1 id="newsLetter-heading" class="title">Stay Updated!</h1>
+          <p>Join 60,000+ product manager reciving monthly updates on:</p>
+          <ul class="list">
+            <li>
+              <img
+                class="list-img"
+                src="assets/images/icon-success.svg"
+                alt="success-img"
+              />
+              Product discovery and building what matters
+            </li>
+            <li>
+              <img
+                class="list-img"
+                src="assets/images/icon-success.svg"
+                alt="success-img"
+              />
+              Measuring to ensure updates are success
+            </li>
+            <li>
+              <img
+                class="list-img"
+                src="assets/images/icon-success.svg"
+                alt="success-img"
+              />
+              And much more!
+            </li>
+          </ul>
+
+          <div class="form">
+            <label for="email" class="email-label">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="JawadSadiq@gmail.com"
+              required
+            />
+            <button class="btn-submit btn">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </header>
+        <figure class="img-card"></figure>
+      </article>
+      <article class="card result-card" hidden>
+        <div>
+          <img src="assets/images/icon-success.svg" alt="Success-Icon" />
+        </div>
+        <header>
+          <h1 id="success-heading" class="title">Thanks for subscribing!</h1>
+          <p class="description">
+            Aconfirmation email has been sent to
+            <span class="gmail-name"></span>
+            please open it and click the button to confirm your subscription.
+          </p>
+        </header>
+        <button class="btn btn-dismiss">Dismiss message</button>
+      </article>
+    </main>
+  </body>
 </html>
